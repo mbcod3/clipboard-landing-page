@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap');
+
+/* General */
+
+* {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color:hsl(210, 10%, 33%);
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-mg {
+  margin: 2rem 0;
+}
+
+.img-sm {
+  width: 50px
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+main,
+section {
+  margin-top: 5rem;
+  margin-bottom: 5rem; 
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+p {
+  color:hsl(201, 11%, 66%);
+}
+
+
+/* Buttons */
+
+.download a {
+  display: block;
+  width: 100%;
+  background-color: hsl(171, 66%, 44%);
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 3px 0 hsl(171, 68%, 31%),
+  0 7px 25px hsla(171, 68%, 31%, 0.555);
+  margin-top: 2rem;
+  max-width: 320px
+}
+
+.download a:hover,
+.download a:active {
+  background-color: hsla(171, 66%, 44%, 0.726);
+}
+
+.download a:nth-last-child(1) {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 3px 0 hsl(233, 45%, 38%),
+  0 7px 25px hsla(233, 45%, 38%, 0.5);
+}
+
+.download a:nth-last-child(1):hover,
+.download a:nth-last-child(1):active {
+  background-color: hsla(233, 100%, 69%, 0.747);
+}
+
+/* Track Section */
+
+
+.feature div:nth-child(3) {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Brand Section */
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  background: hsla(202, 11%, 66%, 0.13);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+  color:hsl(171, 65%, 50%)
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-size: 24px;
+}
+
+.social-links a:nth-child(2) {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.social-links i:hover,
+.social-links i:active {
+  color:hsl(171, 65%, 43%)
+}
