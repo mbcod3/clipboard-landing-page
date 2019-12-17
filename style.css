@@ -15,6 +15,14 @@ body {
   margin: 0
 }
 
+
+
+.mw-sm {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -50,13 +58,22 @@ section {
 
 p {
   color:hsl(201, 11%, 66%);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 /* Buttons */
 
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .download a {
-  display: block;
   width: 100%;
   background-color: hsl(171, 66%, 44%);
   border-radius: 30px;
@@ -90,7 +107,7 @@ p {
 /* Track Section */
 
 
-.feature div:nth-child(3) {
+.feature div:nth-child(2) {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -144,4 +161,144 @@ footer {
 .social-links i:hover,
 .social-links i:active {
   color:hsl(171, 65%, 43%)
+}
+
+
+/* Media Query */
+
+@media (min-width: 376px) {
+  body {
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1100px) {
+
+  .logo {
+    margin-top: 4rem;
+  }
+
+  /* Typography */
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .footer-links a {
+    font-size: 22px;
+  }
+
+  /* Buttons */
+
+  .download {
+    flex-direction: row;
+  }
+
+  .download a {
+    max-width: 270px;
+    font-size: 20px;
+  }
+
+  .download a:nth-last-child(1) {
+    margin-left: 1rem;
+  }
+
+  /* Track Section */
+
+  .feature {
+    display: flex;
+    margin-left: -50px;
+  }
+
+  .snippets {
+    margin-left: 3rem;
+  }
+
+
+  /* Workflow Section */
+  
+  .workflow {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .workflow div:nth-child(2) {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .workflow img {
+    height: 32px
+  }
+
+  /* Brand Section */
+
+  .brands {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .brands img {
+    margin: 0 2rem;
+  }
+
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  footer img.footer-logo {
+    margin-top: 2rem;
+    width: 75px
+  }
+
+  .footer-links {
+    display: grid;
+    width: 550px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    column-gap: 10px;
+  }
+
+  .social-links {
+    margin-top: 2rem;
+  }
+
+  .social-links a {
+    font-size: 28px;
+  }
+  
+}
+
+@media (min-width: 1441px) {
+  body {
+    background-size: 100% auto;
+  }
+
+  .imac {
+    width: 48vw
+  }
+  .snippets {
+    margin-left: 5rem;
+  }
 }
